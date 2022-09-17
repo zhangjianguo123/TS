@@ -13,9 +13,9 @@ module.exports = {
            // 文件名
            filename: 'main.js',
     },
-    // resolve: {
-    //     extendsions:['.js', '.ts', '.tsx']
-    // },
+    resolve: {
+        extensions: ['.js', '.ts','.json', '.wasm'],
+      },
     module: {
         rules: [
             {
