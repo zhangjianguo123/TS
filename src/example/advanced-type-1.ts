@@ -11,7 +11,7 @@ mergeFun({ a: 'b' }, { b: 'a' })
 // 类型保护: 当返回值不明确时，使用类型保护
 const MaxFun = () => {
     console.log('%c>>>>>>>>>>>>>', 'color:red;', Math.round(Math.random() * 10));
-    let num = Math.round(Math.random() * 10)
+    const num = Math.round(Math.random() * 10)
     if (num % 2 === 0) {
         return '123'
     } else {
@@ -74,15 +74,15 @@ type types = 'a' | 'b' | 'c'
 let types:types = 'c'
 
 // 单例
-interface advanced1 {
+interface Advanced1 {
     type: 'input',
     name: string
 }
-interface advanced2 {
+interface Advanced2 {
     type: 'select',
     age: number
 }
-type advanced= advanced1 | advanced2
+type advanced= Advanced1 | Advanced2
 function select(S:advanced ) {
     switch(S.type) {
         case 'input':
@@ -92,7 +92,7 @@ function select(S:advanced ) {
             console.log('%c>>>>>>>>>>>>>', 'color:red;','select');
             break
         default:
-            throw('出错了')
+            throw new Error(('出错了'))
     }
 }
 select({type: 'input', name: '哈哈'})

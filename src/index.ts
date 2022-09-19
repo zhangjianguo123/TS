@@ -6,5 +6,7 @@
 // import './example/class' // 类
 // import './example/enum' // 枚举
 // import './example/interence-compatibility' // 类型推断和兼容性
-import './example/advanced-type-1' // 高级类型1
+// import './example/advanced-type-1' // 高级类型1
+// import './example/advanced-type-2' // 高级类型2
+import './module/index'
 document.title = 'test_ts'

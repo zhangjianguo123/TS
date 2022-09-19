@@ -1,7 +1,8 @@
 // 类型默认以左边的值进行推断
 let name1 ='lison'
 // name1 = false
-let arr3: Array<number | string> = [1, 's']
+// let arr3: Array<number | string> = [1, 's']
+let arr3: (number | string)[] = [1, 's']
 let arr4 = [6,'p']
 // arr3 = [7, 's', false]
 // arr4 = [8, 'q', true]
